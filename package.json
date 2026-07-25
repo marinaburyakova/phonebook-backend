@@ -1,0 +1,31 @@
+{
+  "name": "phonebook-backend",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js",
+    "lint": "eslint index.js models/",
+    "build:ui": "rimraf dist && cd ../path_to_frontend && npm run build && cpy dist ../phonebook-backend",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "mongoose": "^9.8.0",
+    "morgan": "^1.11.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "cpy-cli": "^7.0.0",
+    "eslint": "^10.8.0",
+    "globals": "^17.7.0",
+    "rimraf": "^6.1.3"
+  }
+}
